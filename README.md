@@ -1,5 +1,9 @@
 # github-core-clone-01 — v3
 
+[![make.fun · github-core-clone-01](https://make.fun/badge/github-core-clone-01.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![rank](https://make.fun/badge/github-core-clone-01/Ci3hu1/github-core-clone-01-v3/rank.svg)](https://make.fun/bounty/github-core-clone-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![reward](https://make.fun/badge/github-core-clone-01/Ci3hu1/github-core-clone-01-v3/reward.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+
 A static Go forge for the [github-core-clone-01](https://make.fun/competitions/github-core-clone-01)
 competition: a GitHub-core clone (REST v3, GraphQL v4, MCP, smart HTTP git)
 that scores on feature, agent behaviour and raw speed.
