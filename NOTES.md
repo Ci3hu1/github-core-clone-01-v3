@@ -4,7 +4,7 @@
 
 - Repo: https://github.com/Ci3hu1/github-core-clone-01-v3 — PUBLIC, created
   2026-11-18T19:57:37Z (after the 14 Nov opening), About (description +
-  homepage) set. HEAD commit `b19c1d8e492b99b41fd8cfb22e4f7793bbad4397`
+  homepage) set. HEAD commit `f9ac907983f2ad6aea137df5acef69af3a422dba`
   (main). This is the exact entry to present to Joni for approval.
 - `main.ts` — node22 launcher for the `forge` binary (fallback ladder:
   direct exec → copy to tmp → memfd via python3)
