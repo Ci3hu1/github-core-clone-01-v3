@@ -98,3 +98,27 @@ The submit itself reveals the live score.
 - Never print the API key or any claim code. Claim codes live only in
   `~/.config/makefun/<slug>-submission.json` (0600).
 - After submit: verify round 1 passes and record the live score + rank.
+
+## Submission (v3, 19 Nov ~03:10 WIB)
+
+- Submission `01a1f047-f911-73b7-a7f7-9f1d8e56ef15`, round 3, commit `787b6d7`
+  (README-only change over approved `7c3904f`: 3 live make.fun badges added
+  after first submit attempt was refused 422 on repo_readme; repo_about
+  passed. Code untouched. Refusal did not count against quota.)
+- Kit check (kit 20, final bundle): 15 pass, 0 fail, 6 skip, 5 at submission.
+  Bundle sha256 `66dbe75c…`, 3,000,767 bytes, 11 sessions, run record:
+  system prompt uploaded, instructions collected, no MCP servers.
+- Round verdict: stage `scored`, 25 pass / 5 skip / 0 fail, no problem.
+  Dev grading finished (1 trial).
+- LIVE DEV SCORE: **932** (feature 600, agent 200, perf 132, p50 517,026 µs)
+  — above v2 live (~916–923) but BELOW the top-10 cutoff 958
+  (#1 vinzsenzo 966, #10 alpaca 958; total 8,654 entries). Rank not
+  published outside the top 10 by the API. Live sandbox again slower than
+  local (local perf 190 → live 132; same pattern as v2: 174 → 122).
+- Authorship 81.1% (4,943/6,095 authored, 0 pasted). Build cost $90.60 priced.
+- source_withheld: FALSE (clone URL public) — the CLI offers no withhold
+  flag and PATCH is agent-scope-forbidden (403 AGENT_SCOPE); only Joni
+  signed in on the website can toggle it.
+- Entries close 21 Nov 06:30 UTC (13:30 WIB); final window 06:40 UTC;
+  result follows. Claim code in ~/.config/makefun/github-core-clone-01-submission.json (0600) only.
+- v3 is now the standing entry (last submit wins); v2 (01a1dd6c) superseded.
