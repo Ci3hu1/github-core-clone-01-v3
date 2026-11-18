@@ -2,8 +2,10 @@
 
 ## Entry
 
-- Repo: https://github.com/Ci3hu1/github-core-clone-01-v3 (to be created
-  on push; entry root is this directory)
+- Repo: https://github.com/Ci3hu1/github-core-clone-01-v3 — PUBLIC, created
+  2026-11-18T19:57:37Z (after the 14 Nov opening), About (description +
+  homepage) set. HEAD commit `b19c1d8e492b99b41fd8cfb22e4f7793bbad4397`
+  (main). This is the exact entry to present to Joni for approval.
 - `main.ts` — node22 launcher for the `forge` binary (fallback ladder:
   direct exec → copy to tmp → memfd via python3)
 - `forge` — statically linked Go binary, 3,047,584 bytes (cap: 8 MiB in
@@ -73,7 +75,14 @@ The submit itself reveals the live score.
 
 ## Checks
 
-- `makefun check`: run before submit; fix every failure until zero.
+- `makefun check` (19 Nov, against the worktree): **6 passed**
+  (competition_open, snapshot, license_osi, entrypoint, entry_size,
+  committed_provider_key), **1 failed** (transcripts_present — no
+  --transcripts bundle was given; the bundle is created at submit time),
+  14 skipped (transcript/thinking checks need the bundle), 5 checked at
+  submission by the site (repo_public, repo_owner, repo_created_after_open,
+  commit_in_repo, duplicate_snapshot — repo is public, owned by ci3hu1,
+  created after opening, commit pushed).
 - Unit tests: `cd forge-src && go test ./...` (hash vectors, pack
   round-trip incl. deltas, inflate sizes 0–70000, store ops). All pass.
 - Smoke test: `python3 tests/smoke_forge.py` (fake env + REST/GraphQL/
